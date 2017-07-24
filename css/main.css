@@ -1,6 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:100,300,400,500');
 
 /* ==========================================================================
+   CSS Reset
+   ========================================================================== */
+
+   html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+ 	margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	font-size: 100%;
+ 	font: inherit;
+ 	vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section {
+ 	display: block;
+ }
+ body {
+ 	line-height: 1;
+ }
+ ol, ul {
+ 	list-style: none;
+ }
+ blockquote, q {
+ 	quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+ 	content: '';
+ 	content: none;
+ }
+ table {
+ 	border-collapse: collapse;
+ 	border-spacing: 0;
+ }
+
+/* ==========================================================================
+    CSS Reset
+  ========================================================================== */
+
+
+
+
+
+
+
+
+/* ==========================================================================
    Base styles:
    ========================================================================== */
 /* Fix to include padding and border in the total width for each element */
@@ -15,45 +74,176 @@ img {
 
 
 /* ----------------------------------------
-Typography
+Sections
 ------------------------------------------- */
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  line-height: 22px;
   font-weight: 300;
   color: #333333;
   background-color: #fcfcfc;
 }
 
-
-h1 {
-  font-family: 'poppins', sans-serif;
-  font-size: 48px;
-  text-align: center;
+body a {
+    text-decoration: none;
+    color: #015770;
 }
 
-h2 {
-  font-weight: 700;
-}
-
-h3 {
-  font-weight: 500;
-}
-
-h1, h2, h3, p {
+section {
   margin: 30px;
 }
 
+header {
+  background-size: cover;
+  background-position: top;
+  padding: 150px 100px 100px 100px;
+  height: 50vh;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  margin: 10px auto;
+}
+
+/*hr {
+  border: .2px solid #332f45;
+  margin: 70px 0;
+}*/
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+
+h1 {
+  font-family: 'poppins', sans-serif;
+  font-size: 56px;
+  text-align: center;
+  font-weight: 700;
+  max-width: 100%;
+  line-height: 62px;
+}
+
+h2 {
+  font-weight: 400;
+  font-family: 'poppins', sans-serif;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: center;
+  margin: 50px;
+}
+
+h2 a {
+  font-weight: 400;
+  font-family: 'poppins', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+  color: #333333;
+}
+
+h3 {
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 40px 0 10px 0;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 10px auto;
+}
+
+p {
+  margin: 15px auto;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+
+.cta-green {
+  background-color: #2a8782;
+  border: 1.5px solid #2a8782;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  margin: 60px auto;
+  display: block;
+  font-family: 'poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 100%;
+}
+
+.cta-purple {
+  background-color: #332f45;
+  border: 1.5px solid #332f45;
+  border-radius: 4px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  margin: 60px auto;
+  display: block;
+  font-family: 'poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 100%;
+}
 
 
+#contact-page-cta {
+  width: 360px;
+  margin-top: 0;
+}
 
+#resume-page-cta {
+  width: 200px;
+  margin: 40px auto 40px 0px;
+}
 
 /* ----------------------------------------
 Nav
 ------------------------------------------- */
+nav {
+  background-color: #332f45;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+	left: 0;
+	right: 0;
+  width: 100%;
+}
 
 
+nav a {
+    float: right;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: .8px;
+    margin: 15px 30px 15px 5px;
+}
 
+nav img {
+  float: left;
+  margin: 10px 20px;
+}
 
 /* ----------------------------------------
 Main
@@ -82,6 +272,57 @@ Form
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
+footer {
+  background-color: #332f45;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 25px 0 10px 0;
+  display: inline-block;
+}
+
+footer a {
+  color: white;
+  margin: 3px;
+}
+
+.social {
+  float: left;
+  margin-left: 30px;
+}
+
+.social a {
+  font-size: 30px;
+}
+
+.footer-text-links {
+  float: right;
+  margin-right: 30px;
+  line-height: 34px;
+  font-size: 14px;
+}
+
+
+footer p {
+  color: white;
+  font-size: 14px;
+  margin: 80px auto 0px 30px;
+  text-align: left;
+}
+
+
+/* ----------------------------------------
+Animation
+------------------------------------------- */
+
+
+
+
+
+
+
+/* ----------------------------------------
+Responsive
+------------------------------------------- */
 
 
 
@@ -91,24 +332,64 @@ Footer
    ========================================================================== */
 
 
-
 /* ----------------------------------------
 Contact
 ------------------------------------------- */
 
-.contact-header {
-  background-image: url(../img/contact-header.jpg);
-  background-size: cover;
-  background-position: top;
-  padding: 100px;
-  height: 50vh;
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact-hero {
+  background-image: url(../img/contact-hero.jpg);
+  height: 40vh;
+}
+
+.contact-info h2 {
+  text-align: left;
 }
 
 .contact-info {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.contact-info a {
+  color: #333333;
+}
+
+/* ----------------------------------------
+FAQ
+------------------------------------------- */
+
+.faq-hero {
+  background-image: url(../img/faq-hero.jpg);
+  color: white;
+}
+
+.faq-hero h1 {
+  line-height: 60px;
+}
+
+
+/* ----------------------------------------
+Resume
+------------------------------------------- */
+.resume-hero {
+  display: block;
+  background-color: #2a8782;
+  color: white;
+  height: 45vh;
+}
+
+#download-resume {
+  text-align: center;
+  margin: 40px auto;
+  display: block;
+  color: white;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.education {
+  background-color: #2a8782;
+  color: white;
+  padding: 30px;
 }
