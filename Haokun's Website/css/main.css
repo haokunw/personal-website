@@ -1,67 +1,67 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:100,300,400,500');
 
 /* ==========================================================================
-   CSS Reset
-   ========================================================================== */
+CSS Reset
+========================================================================== */
 
-   html, body, div, span, applet, object, iframe,
- h1, h2, h3, h4, h5, h6, p, blockquote, pre,
- a, abbr, acronym, address, big, cite, code,
- del, dfn, em, img, ins, kbd, q, s, samp,
- small, strike, strong, sub, sup, tt, var,
- b, u, i, center,
- dl, dt, dd, ol, ul, li,
- fieldset, form, label, legend,
- table, caption, tbody, tfoot, thead, tr, th, td,
- article, aside, canvas, details, embed,
- figure, figcaption, footer, header, hgroup,
- menu, nav, output, ruby, section, summary,
- time, mark, audio, video {
- 	margin: 0;
- 	padding: 0;
- 	border: 0;
- 	font-size: 100%;
- 	font: inherit;
- 	vertical-align: baseline;
- }
- /* HTML5 display-role reset for older browsers */
- article, aside, details, figcaption, figure,
- footer, header, hgroup, menu, nav, section {
- 	display: block;
- }
- body {
- 	line-height: 1;
- }
- ol, ul {
- 	list-style: none;
- }
- blockquote, q {
- 	quotes: none;
- }
- blockquote:before, blockquote:after,
- q:before, q:after {
- 	content: '';
- 	content: none;
- }
- table {
- 	border-collapse: collapse;
- 	border-spacing: 0;
- }
-
-/* ==========================================================================
-    CSS Reset
-  ========================================================================== */
-
-
-
-
-
-
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 /* ==========================================================================
-   Base styles:
-   ========================================================================== */
+CSS Reset
+========================================================================== */
+
+
+
+
+
+
+
+
+/* ==========================================================================
+Base styles:
+========================================================================== */
 /* Fix to include padding and border in the total width for each element */
 * {
   box-sizing: border-box;
@@ -86,8 +86,8 @@ body {
 }
 
 body a {
-    text-decoration: none;
-    color: #015770;
+  text-decoration: none;
+  color: #015770;
 }
 
 section {
@@ -95,14 +95,10 @@ section {
 }
 
 header {
-  background-size: cover;
-  background-position: top;
-  padding: 150px 100px 100px 100px;
-  height: 50vh;
   max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /*display: flex;*/
+  /*align-items: center;
+  justify-content: center;*/
 }
 
 div {
@@ -110,8 +106,8 @@ div {
 }
 
 /*hr {
-  border: .2px solid #332f45;
-  margin: 70px 0;
+border: .2px solid #332f45;
+margin: 70px 0;
 }*/
 
 /* ----------------------------------------
@@ -174,7 +170,7 @@ Buttons
 
 .cta-green {
   background-color: #2a8782;
-  border: 1.5px solid #2a8782;
+  border: none;
   border-radius: 4px;
   padding: 15px;
   text-align: center;
@@ -189,17 +185,44 @@ Buttons
 
 .cta-purple {
   background-color: #332f45;
-  border: 1.5px solid #332f45;
+  border: none;
   border-radius: 4px;
   padding: 15px;
   text-align: center;
   color: white;
-  margin: 60px auto;
+  margin: 40px auto;
   display: block;
   font-family: 'poppins', sans-serif;
   font-size: 20px;
   font-weight: 500;
   max-width: 100%;
+}
+
+/* ------ homepage cta ----------- */
+
+#home-hero-cta {
+  display: block;
+  width: 140px;
+}
+
+#about-haokun-cta {
+  width: 200px;
+}
+
+#home-brand-influence {
+  width: 230px;
+}
+
+#home-lead-generation {
+  width: 230px;
+}
+
+#home-marketing-strategy {
+  width: 230px;
+}
+
+#home-learn-more {
+  width: 160px;
 }
 
 /* ------ contact page cta ----------- */
@@ -248,23 +271,23 @@ nav {
   position: fixed;
   z-index: 999;
   top: 0;
-	left: 0;
-	right: 0;
+  left: 0;
+  right: 0;
   width: 100%;
 }
 
 
 nav a {
-    float: left;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'poppins', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    letter-spacing: .8px;
-    margin: 15px 30px 15px 5px;
+  float: left;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .8px;
+  margin: 15px 30px 15px 5px;
 }
 
 .float-right {
@@ -350,7 +373,31 @@ footer p {
 /* ----------------------------------------
 Animation
 ------------------------------------------- */
+.cta-green:hover {
+  background-color: #3ea8a2;
+  transition: background-color .2s ease-in-out;
+}
 
+.cta-purple:hover {
+  background-color: #645e82;
+  transition: background-color .2s ease-in-out;
+}
+
+.home-achieve h3:hover {
+  opacity: .9;
+  transform: scale(1.05);
+  transition: transform .5 ease-in-out;
+}
+
+nav a:hover {
+  color: #d3d0e8;
+  transition: color .2s ease-in-out;
+}
+
+footer a:hover {
+  color: #d3d0e8;
+  transition: color .2s ease-in-out;
+}
 
 
 
@@ -360,9 +407,156 @@ Animation
 
 
 /* ==========================================================================
-  Individual Page Styles
-   ========================================================================== */
+Individual Page Styles
+========================================================================== */
 
+/* ----------------------------------------
+Home
+------------------------------------------- */
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+.home-achieve, .about-haokun {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-haokun img {
+  width: 100%;
+  height: 100%;
+  margin: 30px;
+}
+
+.home-achieve h3 {
+  color: white;
+  padding: 120px 40px;
+  text-align: center;
+  border-radius: 35px;
+}
+
+#home-h2 {
+  margin: 120px auto 20px auto;
+}
+
+.testimonial {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.testimonial h2 {
+  position: absolute;
+  top: 0;
+  margin-top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 900px;
+}
+
+.home-area {
+  display: flex;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+
+}
+
+.home-area.one {
+  background-image: url("../img/note.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.home-area.two {
+  background-image: url("../img/uf.jpg");
+  background-color: #234343;
+  width: 100%;
+}
+
+.home-area.three {
+  background-image: url("../img/keyboard.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+.home-area.four {
+  background-image: url("../img/lights.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+.home-area h3 {
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Robto', sans-serif;
+}
+
+.home-achieve div {
+  margin: 0 10px;
+}
+
+.brand-influence {
+  background-image: url(../img/lights.jpg);
+  background-size: cover;
+}
+
+.lead-generation {
+  background-image: url(../img/lights.jpg);
+  background-size: cover;
+}
+
+.overall-marketing {
+  background-image: url(../img/lights.jpg);
+  background-size: cover;
+}
 
 /* ----------------------------------------
 Contact
@@ -370,7 +564,16 @@ Contact
 
 .contact-hero {
   background-image: url(../img/contact-hero.jpg);
-  height: 40vh;
+  height: 50vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero h1 {
+  padding-top:72px;
 }
 
 .contact-info h2 {
@@ -393,11 +596,18 @@ FAQ
 
 .faq-hero {
   background-image: url(../img/faq-hero.jpg);
+  background-position: top;
+  background-size: cover;
   color: white;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .faq-hero h1 {
   line-height: 60px;
+  padding-top: 72px;
 }
 
 
@@ -408,7 +618,14 @@ Resume
   display: block;
   background-color: #2a8782;
   color: white;
-  height: 45vh;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-hero h1 {
+  padding-top: 72px;
 }
 
 #download-resume {
@@ -426,6 +643,9 @@ Resume
   padding: 30px;
 }
 
+.arrow-up {
+  display: none;
+}
 
 /* ----------------------------------------
 Case Study
@@ -434,7 +654,13 @@ Case Study
 .case-study-hero {
   background-image: url(../img/case-study-hero.jpeg);
   color: #333333;
-  height: 68vh;
+  padding-top: 100px;
+  height: 60vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .case-studies-first, .case-studies-second, .case-studies-third {
@@ -471,12 +697,12 @@ Case Study
 
 
 /* ==========================================================================
-  responsive
-   ========================================================================== */
+responsive
+========================================================================== */
 
 @media screen and (max-width: 750px) {
 
-/* ------ typography ----------- */
+  /* ------ typography ----------- */
   h1 {
     font-size: 26px;
     line-height: 30px;
@@ -502,7 +728,7 @@ Case Study
     line-height: 18px;
   }
 
-/* ------ section ----------- */
+  /* ------ section ----------- */
   footer {
     display: block;
   }
@@ -521,7 +747,7 @@ Case Study
     font-size: 12px;
   }
 
-/* ------ nav ----------- */
+  /* ------ nav ----------- */
 
   .hamburger {
     display: inline-block;
@@ -531,13 +757,13 @@ Case Study
     display: none;
   }
 
-/* ------ buttons ----------- */
+  /* ------ buttons ----------- */
   .cta-green {
     font-size: 16px;
   }
 
 
-/* ------ contact page ----------- */
+  /* ------ contact page ----------- */
   .contact-info h3 {
     font-size: 16px;
   }
@@ -546,5 +772,3 @@ Case Study
   #contact-page-cta {
     width: 250px;
   }
-
-}
