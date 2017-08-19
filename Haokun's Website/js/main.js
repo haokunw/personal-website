@@ -71,6 +71,8 @@ function scaleBannerVideoSize(element){
 // when user click on .arrow-right
 // fade in the current image
 
+$('.two, .three, .four').hide();
+
 var divNumber = 0;
 
 $('.arrow-right').on('click', function() {
@@ -82,15 +84,31 @@ $('.arrow-right').on('click', function() {
   }
 
   $('.home-area').hide();
-  $('.home-area').eq(divNumber).fadeIn(1000);
+  $('.home-area').eq(divNumber).fadeIn(500);
 });
 
+$('.arrow-left').on('click', function() {
 
+  if (divNumber > 0) {
+    divNumber -= 1;
+  } else {
+    divNumber = 3;
+  }
 
+  $('.home-area').hide();
+  $('.home-area').eq(divNumber).fadeIn(500);
+});
 
+setInterval(function(){
+  if (divNumber < 3) {
+    divNumber += 1;
+  } else {
+    divNumber = 0;
+  }
 
-
-
+  $('.home-area').hide();
+  $('.home-area').eq(divNumber).fadeIn(1500);
+}, 8000);
 
 // -------- home modal
 
