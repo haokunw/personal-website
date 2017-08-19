@@ -1,4 +1,6 @@
-// Make it rain!
+// -------------- homepage ------------------ //
+
+// ----------- home hero video
 
 $( document ).ready(function() {
 
@@ -63,6 +65,66 @@ function scaleBannerVideoSize(element){
     });
 }
 
+// ---------- home slider
+
+// hide all images in .home-area
+// when user click on .arrow-right
+// fade in the current image
+
+var divNumber = 0;
+
+$('.arrow-right').on('click', function() {
+
+  if (divNumber < 3) {
+    divNumber += 1;
+  } else {
+    divNumber = 0;
+  }
+
+  $('.home-area').hide();
+  $('.home-area').eq(divNumber).fadeIn(1000);
+});
+
+
+
+
+
+
+
+
+// -------- home modal
+
+// when user scroll to 1550px
+// show .modal
+
+$(window).on('scroll', function (){
+
+  var distanceScrolled = $(window).scrollTop();
+  console.log(distanceScrolled);
+
+  if (distanceScrolled > 1550) {
+    $('.modal').fadeIn(350);
+    $(window).off('scroll');
+  }
+});
+
+// when user click on the x (.close)
+  // hide modal
+$('.close').on('click', function (){
+  $('.modal').fadeOut(350);
+});
+
+
+
+
+
+
+
+
+
+
+
+
 // -------------- nav ------------------ //
 
 // When the user click on the hamburger (.hamburger)
@@ -70,16 +132,124 @@ function scaleBannerVideoSize(element){
 
 
 // -------------- resume page ------------------ //
+$('#skills-pro').on('click', function(){
+  $('#pro-content').slideToggle(350);
+  $('#fa-up-pro').toggle();
+  $('#fa-down-pro').toggle();
+});
 
-  // opt 1: in css, hide arrow up
+$('#skills-comp').on('click', function(){
+  $('#comp-content').slideToggle(350);
+  $('#fa-up-comp').toggle();
+  $('#fa-down-comp').toggle();
+});
 
-// if(user click professional){
-  // hide arrow down
-  // show arrow up
-  // slide down
-// }
+$('#skills-lang').on('click', function(){
+  $('#lang-content').slideToggle(350);
+  $('#fa-up-lang').toggle();
+  $('#fa-down-lang').toggle();
+});
 
-if ('.resume-page h3').on('click', function() {
-  $(this).next(".resume-page h3").slideToggle(500);
-  $(this).find(".arrow-up, .arrow-down").toggle();
+$('#ma').on('click', function(){
+  $('#ma-content').slideToggle(350);
+  $('#fa-up-ma').toggle();
+  $('#fa-down-ma').toggle();
+});
+
+$('#ba').on('click', function(){
+  $('#ba-content').slideToggle(350);
+  $('#fa-up-ba').toggle();
+  $('#fa-down-ba').toggle();
+});
+
+$('#ga').on('click', function(){
+  $('#ga-content').slideToggle(350);
+  $('#fa-up-ga').toggle();
+  $('#fa-down-ga').toggle();
+});
+
+$('#itg').on('click', function(){
+  $('#itg-content').slideToggle(350);
+  $('#fa-up-itg').toggle();
+  $('#fa-down-itg').toggle();
+});
+
+$('#ivymax').on('click', function(){
+  $('#ivymax-content').slideToggle(350);
+  $('#fa-up-ivymax').toggle();
+  $('#fa-down-ivymax').toggle();
+});
+
+$('#nspr').on('click', function(){
+  $('#nspr-content').slideToggle(350);
+  $('#fa-up-nspr').toggle();
+  $('#fa-down-nspr').toggle();
+});
+
+$('#peerfit').on('click', function(){
+  $('#peerfit-content').slideToggle(350);
+  $('#fa-up-peerfit').toggle();
+  $('#fa-down-peerfit').toggle();
+});
+
+$('#omninox').on('click', function(){
+  $('#omninox-content').slideToggle(350);
+  $('#fa-up-omninox').toggle();
+  $('#fa-down-omninox').toggle();
+});
+
+
+
+// -------------- faq page ------------------ //
+
+// when user click on h3
+  // fadeToggle fa-down
+  // fadeToggle fa-up
+
+$('#faq-q1').on('click', function(){
+  $('#faq-a1').slideToggle(350);
+  $('#fa-down-faq1').toggle();
+  $('#fa-up-faq1').toggle();
+});
+
+$('#faq-q2').on('click', function(){
+  $('#faq-a2').slideToggle(350);
+  $('#fa-down-faq2').toggle();
+  $('#fa-up-faq2').toggle();
+});
+
+$('#faq-q3').on('click', function(){
+  $('#faq-a3').slideToggle(350);
+  $('#fa-down-faq3').toggle();
+  $('#fa-up-faq3').toggle();
+});
+
+$('#faq-q4').on('click', function(){
+  $('#faq-a4').slideToggle(350);
+  $('#fa-down-faq4').toggle();
+  $('#fa-up-faq4').toggle();
+});
+
+$('#faq-q5').on('click', function(){
+  $('#faq-a5').slideToggle(350);
+  $('#fa-down-faq5').toggle();
+  $('#fa-up-faq5').toggle();
+});
+
+$('#faq-q6').on('click', function(){
+  $('#faq-a6').slideToggle(350);
+  $('#fa-down-faq6').toggle();
+  $('#fa-up-faq6').toggle();
+});
+
+$('#faq-q7').on('click', function(){
+  $('#faq-a7').slideToggle(350);
+  $('#fa-down-faq7').toggle();
+  $('#fa-up-faq7').toggle();
+});
+
+$('#faq-q8').on('click', function(){
+  $('#faq-a8').slideToggle(350);
+  $('#fa-down-faq8').toggle();
+  $('#fa-up-faq8').toggle();
 });
