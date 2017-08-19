@@ -170,6 +170,15 @@ p {
   font-style: italic;
 }
 
+.bold {
+  font-weight: 500;
+  letter-spacing: .02rem;
+}
+
+.space {
+  margin: 0 10px;
+}
+
 /* ----------------------------------------
 Buttons
 ------------------------------------------- */
@@ -294,13 +303,13 @@ Buttons
 .arrow-right {
   top: 0;
   right: 0;
-  transform: translate(160%, 220px) rotate(225deg);
+  transform: translate(160%, 210px) rotate(225deg);
 }
 
 .arrow-left  {
   top: 0;
   left: 0;
-  transform: translate(-160%, 220px) rotate(45deg);
+  transform: translate(-160%, 210px) rotate(45deg);
 }
 
 .arrow-up {
@@ -330,6 +339,7 @@ nav {
   left: 0;
   right: 0;
   width: 100%;
+  height: 60px;
 }
 
 
@@ -343,7 +353,7 @@ nav a {
   font-weight: 300;
   font-size: 16px;
   letter-spacing: .8px;
-  margin: 15px 30px 15px 5px;
+  margin: 10px 30px 10px 5px;
 }
 
 .float-right {
@@ -352,7 +362,7 @@ nav a {
 
 .logo {
   float: left;
-  margin: 15px;
+  margin: 10px;
 }
 
 .hamburger {
@@ -579,7 +589,7 @@ Home
 .testimonial-content h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
-  margin-bottom: 250px;
+  margin: 90px auto 200px auto;
   font-weight: 300;
 }
 
@@ -592,24 +602,27 @@ Home
   height: 550px;
   position: relative;
   background-size: cover;
-  background-position: center;
   width: 100%;
 }
 
 .home-area.one {
   background-image: url("../img/sit.jpg");
+  background-position: center;
 }
 
 .home-area.two {
-  background-image: url("../img/pencil.jpeg");
+  background-image: url("../img/pencil.jpg");
+  background-position: top;
 }
 
 .home-area.three {
-  background-image: url("../img/note.jpeg");
+  background-image: url("../img/note.jpg");
+  background-position: top;
 }
 
 .home-area.four {
-  background-image: url("../img/lamp.jpeg");
+  background-image: url("../img/lamp.jpg");
+  background-position: bottom;
 }
 
 .home-area h3 {
@@ -624,17 +637,17 @@ Home
 }
 
 .brand-influence {
-  background-image: url('../img/mic.jpeg');
+  background-image: url('../img/mic.jpg');
   background-size: cover;
 }
 
 .lead-generation {
-  background-image: url('../img/keys.jpeg');
+  background-image: url('../img/keys.jpg');
   background-size: cover;
 }
 
 .overall-marketing {
-  background-image: url('../img/m.jpeg');
+  background-image: url('../img/m.jpg');
   background-size: cover;
 }
 
@@ -785,7 +798,7 @@ FAQ
   padding-top: 72px;
 }
 
-#faq-work-sample-link {
+.faq-inparagraph-link {
   font-weight: 400;
 }
 
@@ -844,7 +857,7 @@ Case Study
 ------------------------------------------- */
 
 .case-study-hero {
-  background-image: url('../img/case-study-hero.jpeg');
+  background-image: url('../img/case-study-hero.jpg');
   color: #333333;
   padding-top: 100px;
   height: 60vh;
@@ -871,6 +884,10 @@ Case Study
   margin: 30px;
 }
 
+.case-studies-second img {
+  margin-right: 60px;
+}
+
 .case-studies-second {
   background-color: #2a8782;
   color: white;
@@ -878,13 +895,8 @@ Case Study
 }
 
 .case-studies-second-content {
-  margin: 30px;
+  margin: auto 50px;
 }
-
-
-
-
-
 
 /* ==========================================================================
 responsive
