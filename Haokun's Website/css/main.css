@@ -244,6 +244,8 @@ Buttons
 #modal-cta {
   width: 230px;
   margin-bottom: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 /* ------ contact page cta ----------- */
@@ -668,7 +670,7 @@ Home
 /* Modal Content/Box */
 .modal-content {
     background-color: #fcfcfc;
-    margin: 5% auto; /* 5% from the top and centered */
+    margin: 60px auto;
     padding: 20px;
     border: 1px solid #888;
     width: 70%; /* Could be more or less, depending on screen size */
@@ -715,7 +717,7 @@ textarea {
 }
 
 #example {
-  height: 200px;
+  height: 100px;
   margin-top: 0;
 }
 

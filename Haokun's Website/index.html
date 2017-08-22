@@ -117,10 +117,11 @@
       <h3>If there's one thing you wish your business could have done better, what is it? How can I help?</h3>
       <form action="https://formspree.io/haokun.n.wang@gmail.com" method="POST">
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Your email">
+        <input type="email" name="email" id="email" placeholder="Your email">
         <label for="example">Areas to improve</label>
-        <textarea id="example" placeholder='For example: "I hope to rank higher on search engines" or "I need to develope international go-to-market strategies".'></textarea>
-        <button type="button" class="cta-green" id="modal-cta">Share with Haokun</button>
+        <textarea id="example" name="improve" placeholder='For example: "I hope to rank higher on search engines" or "I need to develope international go-to-market strategies".'></textarea>
+        <input type="submit" value="Share with Haokun" class="cta-green" id="modal-cta" target="_blank">
+        <!-- <button type="button" class="cta-green" id="modal-cta">Share with Haokun</button> -->
       </form>
     </div>
 
