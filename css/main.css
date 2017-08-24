@@ -1,67 +1,67 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:100,300,400,500');
 
 /* ==========================================================================
-   CSS Reset
-   ========================================================================== */
+CSS Reset
+========================================================================== */
 
-   html, body, div, span, applet, object, iframe,
- h1, h2, h3, h4, h5, h6, p, blockquote, pre,
- a, abbr, acronym, address, big, cite, code,
- del, dfn, em, img, ins, kbd, q, s, samp,
- small, strike, strong, sub, sup, tt, var,
- b, u, i, center,
- dl, dt, dd, ol, ul, li,
- fieldset, form, label, legend,
- table, caption, tbody, tfoot, thead, tr, th, td,
- article, aside, canvas, details, embed,
- figure, figcaption, footer, header, hgroup,
- menu, nav, output, ruby, section, summary,
- time, mark, audio, video {
- 	margin: 0;
- 	padding: 0;
- 	border: 0;
- 	font-size: 100%;
- 	font: inherit;
- 	vertical-align: baseline;
- }
- /* HTML5 display-role reset for older browsers */
- article, aside, details, figcaption, figure,
- footer, header, hgroup, menu, nav, section {
- 	display: block;
- }
- body {
- 	line-height: 1;
- }
- ol, ul {
- 	list-style: none;
- }
- blockquote, q {
- 	quotes: none;
- }
- blockquote:before, blockquote:after,
- q:before, q:after {
- 	content: '';
- 	content: none;
- }
- table {
- 	border-collapse: collapse;
- 	border-spacing: 0;
- }
-
-/* ==========================================================================
-    CSS Reset
-  ========================================================================== */
-
-
-
-
-
-
-
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 /* ==========================================================================
-   Base styles:
-   ========================================================================== */
+CSS Reset
+========================================================================== */
+
+
+
+
+
+
+
+
+/* ==========================================================================
+Base styles:
+========================================================================== */
 /* Fix to include padding and border in the total width for each element */
 * {
   box-sizing: border-box;
@@ -86,8 +86,8 @@ body {
 }
 
 body a {
-    text-decoration: none;
-    color: #015770;
+  text-decoration: none;
+  color: #015770;
 }
 
 section {
@@ -95,14 +95,10 @@ section {
 }
 
 header {
-  background-size: cover;
-  background-position: top;
-  padding: 150px 100px 100px 100px;
-  height: 50vh;
   max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /*display: flex;*/
+  /*align-items: center;
+  justify-content: center;*/
 }
 
 div {
@@ -110,8 +106,8 @@ div {
 }
 
 /*hr {
-  border: .2px solid #332f45;
-  margin: 70px 0;
+border: .2px solid #332f45;
+margin: 70px 0;
 }*/
 
 /* ----------------------------------------
@@ -161,11 +157,26 @@ h4 {
 }
 
 p {
-  margin: 15px auto;
+  margin: 20px auto;
+}
+
+.no-thanks {
+  color: #fcfcfc;
+  text-decoration: underline;
+  font-size: 18px;
 }
 
 .italic {
   font-style: italic;
+}
+
+.bold {
+  font-weight: 500;
+  letter-spacing: .02rem;
+}
+
+.space {
+  margin: 0 10px;
 }
 
 /* ----------------------------------------
@@ -174,7 +185,7 @@ Buttons
 
 .cta-green {
   background-color: #2a8782;
-  border: 1.5px solid #2a8782;
+  border: none;
   border-radius: 4px;
   padding: 15px;
   text-align: center;
@@ -189,12 +200,12 @@ Buttons
 
 .cta-purple {
   background-color: #332f45;
-  border: 1.5px solid #332f45;
+  border: none;
   border-radius: 4px;
   padding: 15px;
   text-align: center;
   color: white;
-  margin: 60px auto;
+  margin: 40px auto;
   display: block;
   font-family: 'poppins', sans-serif;
   font-size: 20px;
@@ -202,16 +213,122 @@ Buttons
   max-width: 100%;
 }
 
+/* ------ homepage cta ----------- */
+
+#home-hero-cta {
+  display: block;
+  width: 180px;
+  position: relative;
+}
+
+#about-haokun-cta {
+  width: 200px;
+}
+
+#home-brand-influence {
+  width: 230px;
+}
+
+#home-lead-generation {
+  width: 230px;
+}
+
+#home-marketing-strategy {
+  width: 230px;
+}
+
+#home-learn-more {
+  width: 160px;
+}
+
+#modal-cta {
+  width: 230px;
+  margin-bottom: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+/* ------ contact page cta ----------- */
 
 #contact-page-cta {
-  width: 360px;
+  width: 480px;
   margin-top: 0;
 }
 
-#resume-page-cta {
-  width: 200px;
-  margin: 40px auto 40px 0px;
+/* ------ case study page cta ----------- */
+
+#increase-conversion {
+  width: 300px;
+  margin-left: 0;
 }
+
+#rapport {
+  width: 480px;
+  margin-left: 0;
+}
+
+#content-strategy {
+  width: 360px;
+  margin-left: 0;
+}
+
+/* ------ resume page cta ----------- */
+#skills {
+  width: 320px;
+  margin-left: 0;
+}
+
+#education-cta {
+  width: 200px;
+  margin: 70px auto 40px auto;
+}
+
+#work-experience {
+  width: 360px;
+}
+
+.arrow {
+  position: absolute;
+  padding: 1rem; /* Arrow size */
+  box-shadow: 1px -1px 0 1px #333333 inset;
+  -webkit-box-shadow: 2px -2px #333333 inset;
+  border: solid transparent;
+  border-width: 0 0 2rem 2rem;
+  transition: 0.2s;
+}
+
+.arrow:hover {
+  box-shadow: 2px -2px 0 2px #3ea8a2 inset;
+  -webkit-box-shadow: 4px -4px #3ea8a2 inset;
+}
+
+.arrow-right {
+  top: 0;
+  right: 0;
+  transform: translate(160%, 210px) rotate(225deg);
+}
+
+.arrow-left  {
+  top: 0;
+  left: 0;
+  transform: translate(-160%, 210px) rotate(45deg);
+}
+
+.arrow-up {
+  padding: .5rem;
+  transform: rotate(-45deg) translate(-5px,-5px);
+}
+
+.arrow-down {
+  display: inline-block;
+  padding: .5rem;
+  transform: rotate(-45deg) translate(0);
+}
+
+.fa-up {
+  display: none;
+}
+
 
 /* ----------------------------------------
 Nav
@@ -221,52 +338,40 @@ nav {
   position: fixed;
   z-index: 999;
   top: 0;
-	left: 0;
-	right: 0;
+  left: 0;
+  right: 0;
   width: 100%;
+  height: 60px;
 }
 
 
 nav a {
-    float: right;
-    display: inline-block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'poppins', sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: .8px;
-    margin: 15px 30px 15px 5px;
-}
-
-nav img {
   float: left;
-  margin: 10px 20px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .8px;
+  margin: 10px 30px 10px 5px;
 }
 
-/* ----------------------------------------
-Main
-------------------------------------------- */
+.float-right {
+  float: right;
+}
 
+.logo {
+  float: left;
+  margin: 10px;
+}
 
-
-/* ----------------------------------------
-Images
-------------------------------------------- */
-
-
-
-
-
-
-
-/* ----------------------------------------
-Form
-------------------------------------------- */
-
-
-
+.hamburger {
+  font-size: 30px;
+  margin: 10px;
+  display: none;
+}
 
 
 /* ----------------------------------------
@@ -275,7 +380,7 @@ Footer
 footer {
   background-color: #332f45;
   width: 100%;
-  margin-bottom: 0;
+  margin: 50px 0 0 0;
   padding: 25px 0 10px 0;
   display: inline-block;
 }
@@ -313,23 +418,329 @@ footer p {
 /* ----------------------------------------
 Animation
 ------------------------------------------- */
+.cta-green:hover {
+  background-color: #3ea8a2;
+  transition: background-color .2s ease-in-out;
+}
+
+.cta-purple:hover {
+  background-color: #645e82;
+  transition: background-color .2s ease-in-out;
+}
+
+.home-achieve h3 {
+  transition: all .2s ease-in-out;
+}
+
+.home-achieve h3:hover {
+  opacity: .9;
+  transform: scale(1.05);
+}
+
+nav a:hover {
+  color: #d3d0e8;
+  transition: color .2s ease-in-out;
+}
+
+footer a:hover {
+  color: #d3d0e8;
+  transition: color .2s ease-in-out;
+}
 
 
 
 
-
-
-
-/* ----------------------------------------
-Responsive
-------------------------------------------- */
 
 
 
 
 /* ==========================================================================
-  Individual Page Styles
-   ========================================================================== */
+Individual Page Styles
+========================================================================== */
+
+/* ----------------------------------------
+Home
+------------------------------------------- */
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+    height: 100vh;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.home-hero-container {
+  position: relative;
+}
+
+.home-hero-content {
+  position: absolute;
+  margin-top: 280px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  color: white;
+  z-index: 10;
+}
+
+.home-hero-content h1 {
+  margin-bottom: 100px;
+}
+
+#home-h1 {
+  line-height: 100px;
+  font-weight: 400;
+  font-size: 42px;
+}
+
+#home-no {
+  position: absolute;
+  margin-left: 50%;
+  transform: translate(-50%, -200%);
+}
+
+#home-no:hover {
+  color: #d3d0e8;
+  transition: all .3s ease-in-out;
+}
+
+.home-achieve, .about-haokun {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-haokun img {
+  width: 30%;
+  height: 30%;
+  margin: 30px;
+}
+
+.home-achieve h3 {
+  color: white;
+  padding: 120px 40px;
+  text-align: center;
+  border-radius: 35px;
+}
+
+.about-haokun-content p {
+  margin: auto;
+  width: 75%;
+}
+
+#home-h2 {
+  margin: 120px auto 20px auto;
+}
+
+.testimonial {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.testimonial-content {
+  position: absolute;
+  top: 0;
+  margin-top: 100px;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 900px;
+}
+
+.testimonial-content h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  margin: 90px auto 200px auto;
+  font-weight: 300;
+}
+
+
+.home-area {
+  display: flex;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+}
+
+.home-area.one {
+  background-image: url("../img/sit.jpg");
+  background-position: center;
+}
+
+.home-area.two {
+  background-image: url("../img/pencil.jpg");
+  background-position: top;
+}
+
+.home-area.three {
+  background-image: url("../img/note.jpg");
+  background-position: top;
+}
+
+.home-area.four {
+  background-image: url("../img/lamp.jpg");
+  background-position: bottom;
+}
+
+.home-area h3 {
+  text-align: center;
+  font-size: 68px;
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+}
+
+.home-achieve div {
+  margin: 0 10px;
+}
+
+.brand-influence {
+  background-image: url('../img/mic.jpg');
+  background-size: cover;
+}
+
+.lead-generation {
+  background-image: url('../img/keys.jpg');
+  background-size: cover;
+}
+
+.overall-marketing {
+  background-image: url('../img/m.jpg');
+  background-size: cover;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fcfcfc;
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content h2 {
+  font-size: 30px;
+  margin: 22px;
+}
+
+.modal-content h3 {
+  margin: 30px auto 10px auto;
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+label, input, button, textarea {
+  display: block;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #333333;
+  margin: 30px auto 10px auto;
+}
+
+input, textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+input {
+  height: 40px;
+  padding: 5px;
+}
+
+textarea {
+  height: 180px;
+  padding: 10px;
+}
+
+#example {
+  height: 100px;
+  margin-top: 0;
+}
+
+input:focus, textarea:focus, button:focus {
+	outline: none;
+	box-shadow: 0 0 3px #2a8782;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.close:hover,
+.close:focus {
+    color: #2a8782;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 /* ----------------------------------------
@@ -338,7 +749,21 @@ Contact
 
 .contact-hero {
   background-image: url(../img/contact-hero.jpg);
-  height: 40vh;
+  height: 50vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero h1 {
+  padding-top:72px;
+}
+
+.contact-h1 {
+  font-weight: 400;
+  font-size: 38px;
 }
 
 .contact-info h2 {
@@ -361,11 +786,35 @@ FAQ
 
 .faq-hero {
   background-image: url(../img/faq-hero.jpg);
+  background-position: top;
+  background-size: cover;
   color: white;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .faq-hero h1 {
   line-height: 60px;
+  padding-top: 72px;
+}
+
+.faq-inparagraph-link {
+  font-weight: 400;
+}
+
+.faq-begin {
+  margin-right: 10px;
+}
+
+.faq-q {
+  margin-top: 60px;
+}
+
+.faq-a {
+  margin-left: 35px;
+  display: none;
 }
 
 
@@ -376,7 +825,14 @@ Resume
   display: block;
   background-color: #2a8782;
   color: white;
-  height: 45vh;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-hero h1 {
+  padding-top: 72px;
 }
 
 #download-resume {
@@ -393,3 +849,133 @@ Resume
   color: white;
   padding: 30px;
 }
+
+.resume-content {
+  display: none;
+}
+
+/* ----------------------------------------
+Case Study
+------------------------------------------- */
+
+.case-study-hero {
+  background-image: url('../img/case-study-hero.jpg');
+  color: #333333;
+  padding-top: 100px;
+  height: 60vh;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.case-studies-first, .case-studies-second, .case-studies-third {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.case-studies-first div, .case-studies-second div, .case-studies-third div {
+  margin: 30px;
+}
+
+.case-studies-first img, .case-studies-second img, .case-studies-third img {
+  width: 100%;
+  height: 100%;
+  margin: 30px;
+}
+
+.case-studies-second img {
+  margin-right: 60px;
+}
+
+.case-studies-second {
+  background-color: #2a8782;
+  color: white;
+  margin: auto 0;
+}
+
+.case-studies-second-content {
+  margin: auto 50px;
+}
+
+/* ==========================================================================
+responsive
+========================================================================== */
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+
+  /* ------ typography ----------- */
+  h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  /* ------ section ----------- */
+  footer {
+    display: block;
+  }
+
+  .social a {
+    font-size: 24px;
+  }
+
+  .footer-text-links {
+    float: right;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  /* ------ nav ----------- */
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  /* ------ buttons ----------- */
+  .cta-green {
+    font-size: 16px;
+  }
+
+
+  /* ------ contact page ----------- */
+  .contact-info h3 {
+    font-size: 16px;
+  }
+
+
+  #contact-page-cta {
+    width: 250px;
+  }
